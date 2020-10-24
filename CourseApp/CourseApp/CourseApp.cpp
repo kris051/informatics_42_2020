@@ -21,3 +21,9 @@ int main()
 
 // CourseApp.cpp : This file contains the 'main' function. Program execution begins and ends there.
 //
+#pragma once
+
+double calc(double a, double b, double x);
+double calc(double x);
+void taskA(double a, double b, double xn, double xk, double dx);
+void taskB(double a, double b, double* x, int size);
