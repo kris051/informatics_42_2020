@@ -1,6 +1,8 @@
 #include <iostream>
 #include <math.h>
+#include "header.h"
 using namespace std;
+
 double calc(double a, double x)
 {
 	double numenator = pow(log(a + x), 2);
