@@ -153,6 +153,7 @@
   <ItemGroup>
     <ClCompile Include="calc.cpp" />
     <ClCompile Include="CourseApp.cpp" />
+    <ClCompile Include="Source.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="header.h" />
