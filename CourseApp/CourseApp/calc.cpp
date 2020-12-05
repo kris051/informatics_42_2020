@@ -16,9 +16,9 @@ double calc(double x)
 	return calc(a, x);
 }
 
-int taskA(double a, double xn, double xk, double dx, double *&y)
+int taskA(double a, double xn, double xk, double dx, double*& y)
 {
-	int n = (int)((xk - xn) / dx)+1;
+	int n = (int)((xk - xn) / dx) + 1;
 	y = new double[n];
 	int i = 0;
 	for (double x = xn; x <= xk; x += dx)
@@ -29,9 +29,9 @@ int taskA(double a, double xn, double xk, double dx, double *&y)
 	return n;
 }
 
-int taskB(double a, double* x, int size, double *&y1)
+int taskB(double a, double* x, int size, double*& y1)
 {
-	y1 = new double[size];
+	y = new double[size];
 	for (int i = 0; i < size; i++)
 	{
 		double c = calc(a, x[i]);
