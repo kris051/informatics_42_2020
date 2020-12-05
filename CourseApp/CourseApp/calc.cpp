@@ -31,7 +31,7 @@ int taskA(double a, double xn, double xk, double dx, double*& y)
 
 int taskB(double a, double* x, int size, double*& y1)
 {
-	y = new double[size];
+	y1 = new double[size];
 	for (int i = 0; i < size; i++)
 	{
 		double c = calc(a, x[i]);

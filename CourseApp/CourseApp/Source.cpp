@@ -6,16 +6,16 @@ int main()
 {
 	int i;
 	int j;
-	
-	int** p = new int* [5];
-	for (int i = 0; i < 5; i++)
+	int n = 5; 
+	int** p = new int* [n];
+	for (int i = 0; i < n; i++)
 	{
-		p[i] = new int[5];
+		p[i] = new int[n];
 	}
 	
-	for (int i = 0; i < 5; i++)
+	for (int i = 0; i < n; i++)
 	{
-		for (int j = 0; j < 5; j++)
+		for (int j = 0; j < n; j++)
 		{
 		 p[i][j] = 5;
 			if (i == j) {
@@ -23,16 +23,16 @@ int main()
 			}
 		}
 	}
-	for (int i = 0; i < 5; i++)
+	for (int i = 0; i < n; i++)
 	{
-		for (int j = 0; j < 5; j++)
+		for (int j = 0; j < n; j++)
 		{
 			cout << p[i][j];
 		}
 		cout << endl;
 	}
 
-	for (int i = 0; i < 5; i++) 
+	for (int i = 0; i < n; i++) 
 	{
 		delete[] p[i];  
 	}
